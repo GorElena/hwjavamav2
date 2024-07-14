@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class VacationServiceTest {
 
     @Test
-     public void shouldCalcExpect() {
+    public void shouldCalcExpect() {
         VacationService service = new VacationService();
         // подготавливаем данные:
         int income = 10_000;
@@ -15,11 +15,11 @@ public class VacationServiceTest {
         int threshold = 20_000;
         int expected = 3;
 
-         //вызываем целевой метод:
-        int actual = service.calculate(income,expenses,threshold);
+        //вызываем целевой метод:
+        int actual = service.calculate(income, expenses, threshold);
 
         // проводим проверку( сравниваем ожидаемый и фактический р-т):
-        Assertions.assertEquals( expected, actual);
+        Assertions.assertEquals(expected, actual);
     }
 
 
@@ -27,16 +27,16 @@ public class VacationServiceTest {
     public void shouldCalcPact() {
         VacationService service = new VacationService();
 
-       // подшотавливаем данные:
+        // подшотавливаем данные:
         int income = 100_000;
         int expenses = 60_000;
         int threshold = 150_000;
         int expected = 2;
 
         //вызываем целевой метод:
-        int actual = service.calculate( income,expenses,threshold);
+        int actual = service.calculate(income, expenses, threshold);
 
-        Assertions.assertEquals( expected, actual);
+        Assertions.assertEquals(expected, actual);
     }
 }
 
